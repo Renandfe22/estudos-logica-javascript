@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    <script> //operadores
+        let NumeroUm = 10+15
+        let NumeroDois = 1**2
+        let NumeroTres = 9%10
+        alert(`${NumeroUm}, ${NumeroDois} , ${NumeroTres}`)
+        let resultado = (`${NumeroUm}`)
+        let resultadoDois = (`${NumeroDois}`)
+        let resultadoTres = (`${NumeroTres}`)
+        const final = (`${resultado} e ${resultadoDois} sendo tambem ${resultadoTres}`)
+        alert(`${final}`)
+        let operacoes = [5 > 2 , 7 < 4 , 8 >= 8 , 9 <= 7 , 5 == 5 , 4 != 4]
+        // > MAIOR, < MENOR, >= MAIOR OU IGUAL, <= MENOR OU IGUAL, == IGUAL, != DIFERENTE
+        let identidade = 18 === '18' // operador de igualdade restrita
+        alert(`${operacoes} ` + identidade)
+        
+        // operadores lógicos ( ! = NEGAÇÃO , && = CONJUÇÃO (E) , || = DISJUNÇÃO (ou) )
+        let exemplo = !true //nessa operação estou negando o dado boleano assim tornando o mesmo como false
+        let exemploDois = true && true // para retornar verdadeiro é necessario que as duas informaçoes estejam corretas
+        let exemploTres = false || true // basta que uma unica afirmação seja verdadeira
+        alert(`${exemplo}, ${exemploDois} e ${exemploTres}`)
+        // ordem dos operadores lógicos 1.!, 2.&&, e 3.||.
+
+        // ordem em uma operação apresentando os operadores mostrados até aqui
+        let ordem = 2 + 5 >= 6 || 8 != 10 // operadores aritiméticos, relacionais e por ultimo os lógicos
+        alert(ordem)
+        
+        //operador ternário ? e : na mesma estrutura sendo a estrutura seguinte true ? true : false
+        let soma = 10+15
+        let idade = `a idade de joao é ${soma}`
+        let estrutura = idade<=18?liberado:barrado //joao está liberado para entrar pois tem mais que 18 anos!
+        alert(estrutura)
+        let SegundaEstrutura = idade<=27?liberado:barrado 
+        alert(SegundaEstrutura) // o alerta nao funciona pois a primeira afirmação é false sendo a estrutra ternaria true?true:false
+    </script> 
+</body>
+</html>
