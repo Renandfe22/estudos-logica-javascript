@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventosDom</title>
+    <style>
+                div#area{
+            font: normal 20pt Arial;
+            background: rgb(144, 144, 242);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+   
+   
+   
+   
+   <script>
+        let a = document.getElementById("area") //chama a div pelo id "area"
+        a.addEventListener("click", interacao)//faz a ouvidoria/interação dos eventos com o javascript
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+        function interacao(){
+            a.innerText = "clicou"
+        } //altera o texto da div "area" para um novo assim que executado o comando
+        function entrar(){
+            a.innerText = "entrou"
+        }
+        function sair(){
+            a.innerText = "saiu"
+        } // uma função para cada evento da div!
+        </script>
+</body>
+</html>

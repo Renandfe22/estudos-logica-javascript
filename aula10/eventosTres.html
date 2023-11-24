@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgb(112, 255, 167);
+            font-family: cursive;
+            font-size: larger;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black; /* Adiciona borda preta ao redor de tudo */
+            padding: 10px; /* Adiciona espaçamento interno */
+        }
+
+        h1, h2 {
+            line-height: 30px;
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+
+        #result {
+            background-color: blanchedalmond;
+            font-size: 20pt;
+            text-align: center;
+            margin-top: 10px; /* Adiciona espaço entre o botão e o resultado */
+            margin-right: 65px;
+        }
+
+        .input-container {
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* Adiciona espaço acima dos inputs */
+        }
+
+        input {
+            background-color: blanchedalmond;
+            margin: 0 5px; /* Adiciona espaço entre os inputs */
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>S O M A N D O</h1>
+    <h2>V A L O R E S</h2>
+    <hr>
+    <div class="input-container">
+        <input type="number" name="texto1" id="texto1">
+        +
+        <input type="number" name="texto2" id="texto2">
+        <input type="button" value="Somar" onclick="somar()">
+    </div>
+    <div id="result">
+        resultado
+    </div>
+
+    <script>
+        function somar() {
+            let numeroUm = document.getElementById("texto1");
+            let numeroDois = document.getElementById("texto2");
+            let resultado = document.getElementById("result");
+            let conversaoUm = Number(numeroUm.value);
+            let conversaoDois = Number(numeroDois.value);
+            let soma = conversaoUm + conversaoDois;
+            resultado.innerHTML = soma;
+        }
+    </script>
+</body>
+</html>
+
